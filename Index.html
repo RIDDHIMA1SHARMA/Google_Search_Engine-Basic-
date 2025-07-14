@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .search-box {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      outline: none;
+      font-size: 16px;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+      transition: box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 1px 8px rgba(32, 33, 36, 0.4);
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons input {
+      padding: 10px 16px;
+      font-size: 14px;
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .buttons input:hover {
+      border: 1px solid #c6c6c6;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+      padding: 12px 0;
+      background-color: #f2f2f2;
+    }
+
+    @media screen and (max-width: 600px) {
+      .search-box {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+  </div>
+
+  <form class="search-box" action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="Search Google or type a URL" />
+    <div class="buttons">
+      <input type="submit" value="Google Search">
+      <input type="submit" name="btnI" value="I'm Feeling Lucky">
+    </div>
+  </form>
+
+  <footer>
+    <p>India</p>
+  </footer>
+
+</body>
+</html>
